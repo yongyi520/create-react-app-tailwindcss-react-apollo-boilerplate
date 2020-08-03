@@ -9,15 +9,15 @@ import {
 } from "react-router-dom";
 import Blog from "./Blog/Blog";
 import All from "./Blog/All";
-import New from "./Blog/New";
+import View from "./Blog/View";
 
 const Blogs = () => {
   let match = useRouteMatch();
   return (
-    <div id="AllBlogs">
+    <div className="w-full h-full px-16 py-10 overflow-auto">
       <Switch>
         <Route path={`${match.url}/new`}>
-          <New />
+          <View />
         </Route>
         <Route path={`${match.url}/:blogId`}>
           <Blog />

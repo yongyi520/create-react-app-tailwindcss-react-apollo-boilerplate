@@ -7,6 +7,7 @@ export const ALL_BLOGS_QUERY = gql`
       userId
       slug
       title
+      mainImage
       description
       content
       tags {
@@ -23,6 +24,7 @@ export const BLOG_SINGLE_QUERY = gql`
       slug
       userId
       title
+      mainImage
       description
       content
       tags {

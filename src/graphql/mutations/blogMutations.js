@@ -23,6 +23,7 @@ export const UPDATE_BLOG_MUTATION = gql`
       userId
       slug
       title
+      mainImage
       description
       content
       tags {
